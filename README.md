@@ -22,6 +22,6 @@ Before conducting the analysis, we performed data cleaning to ensure the dataset
 The EDA phase involved analyzing the dataset to uncover patterns, trends, and relationships between different variables. We used various visualizations, statistical techniques, and data manipulation to gain insights into the film industry.
 
 ## Conclusion
-Based on our analysis, we draw conclusions about the film industry, including the most popular genres, the relationship between budget and box office performance, and other interesting findings. This EDA provides a comprehensive understanding of the film industry and can be used for further analysis or decision-making.
+Based on our analysis, we draw conclusions about the film industry, including the most popular genres, best rated directors and writers, and other interesting findings. This EDA provides a comprehensive understanding of the film industry and can be used for further analysis or decision-making.
 
 Please refer to the `index.ipynb` notebook for a detailed analysis and code implementation.
