@@ -136,7 +136,6 @@ bom_df.head()
       <th>domestic_gross</th>
       <th>foreign_gross</th>
       <th>year</th>
-      <th>worldwide_gross</th>
     </tr>
   </thead>
   <tbody>
@@ -145,45 +144,40 @@ bom_df.head()
       <td>Toy Story 3</td>
       <td>BV</td>
       <td>415,000,000</td>
-      <td>652,000,000</td>
+      <td>652000000</td>
       <td>2010</td>
-      <td>1,067,000,000</td>
     </tr>
     <tr>
       <th>1</th>
       <td>Alice in Wonderland (2010)</td>
       <td>BV</td>
       <td>334,200,000</td>
-      <td>691,300,000</td>
+      <td>691300000</td>
       <td>2010</td>
-      <td>1,025,500,000</td>
     </tr>
     <tr>
       <th>2</th>
       <td>Harry Potter and the Deathly Hallows Part 1</td>
       <td>WB</td>
       <td>296,000,000</td>
-      <td>664,300,000</td>
+      <td>664300000</td>
       <td>2010</td>
-      <td>960,300,000</td>
     </tr>
     <tr>
       <th>3</th>
       <td>Inception</td>
       <td>WB</td>
       <td>292,600,000</td>
-      <td>535,700,000</td>
+      <td>535700000</td>
       <td>2010</td>
-      <td>828,300,000</td>
     </tr>
     <tr>
       <th>4</th>
       <td>Shrek Forever After</td>
       <td>P/DW</td>
       <td>238,700,000</td>
-      <td>513,900,000</td>
+      <td>513900000</td>
       <td>2010</td>
-      <td>752,600,000</td>
     </tr>
   </tbody>
 </table>
@@ -2239,19 +2233,19 @@ bom_summary
       <th>count</th>
       <td>3,387</td>
       <td>3,387</td>
-      <td>3,359</td>
+      <td>3,387</td>
     </tr>
     <tr>
       <th>mean</th>
       <td>28,745,845</td>
       <td>70,151,173</td>
-      <td>99,363,294</td>
+      <td>98,897,018</td>
     </tr>
     <tr>
       <th>std</th>
       <td>66,704,973</td>
       <td>107,498,910</td>
-      <td>163,424,096</td>
+      <td>162,851,053</td>
     </tr>
     <tr>
       <th>min</th>
@@ -2263,19 +2257,19 @@ bom_summary
       <th>25%</th>
       <td>122,500</td>
       <td>8,000,000</td>
-      <td>18,200,000</td>
+      <td>18,700,000</td>
     </tr>
     <tr>
       <th>50%</th>
       <td>1,400,000</td>
       <td>70,151,173</td>
-      <td>70,187,773</td>
+      <td>70,185,873</td>
     </tr>
     <tr>
       <th>75%</th>
       <td>28,745,845</td>
       <td>70,151,173</td>
-      <td>73,351,173</td>
+      <td>73,251,173</td>
     </tr>
     <tr>
       <th>max</th>
@@ -2578,6 +2572,11 @@ ax = sns.lineplot(data=yearly_earnings, x='year', y='worldwide_gross')
 
 # labelling
 ax.set_title('Distribution of earnings over the years')
+ax.set_xlabel('Year')
+ax.set_ylabel('Worldwide Gross Earnings')
+
+# convert axes to billions
+ax.yaxis.set_major_formatter(formatter)
 ```
 
     c:\Users\mutis\anaconda3\Lib\site-packages\seaborn\_oldcore.py:1119: FutureWarning: use_inf_as_na option is deprecated and will be removed in a future version. Convert inf values to NaN before operating instead.
@@ -2587,15 +2586,8 @@ ax.set_title('Distribution of earnings over the years')
     
 
 
-
-
-    Text(0.5, 1.0, 'Distribution of earnings over the years')
-
-
-
-
     
-![png](index_files/index_150_2.png)
+![png](index_files/index_150_1.png)
     
 
 
