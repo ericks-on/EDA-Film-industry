@@ -4384,7 +4384,21 @@ Interestingly, beginners sometimes tend to have higher ratings. This can be attr
 
 A single highly-rated movie can disproportionately elevate their average rating. As writers gain more experience and their body of work grows, their ratings might normalize and provide a more comprehensive view of their overall performance.
 
+# Conclusion
 
-```python
+## Top Director in Each Experience Category
 
-```
+- **Beginner**: Stephen Peek
+- **Intermediate**: Nuo Wang
+- **Experienced**: Ian Cranston
+- **Highly Experienced**: Kaushik Ganguly
+- **Veteran**: Sergey A.
+
+## Top Writer in Each Experience Category
+
+- **Beginner**: Brian Baucum
+- **Intermediate**: Zeljko Luketic
+- **Experienced**: Tom Logan
+- **Highly Experienced**: Aaron Cohen
+- **Veteran**: Larry Rosen
+
